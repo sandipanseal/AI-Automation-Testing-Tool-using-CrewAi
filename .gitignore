@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Build/output
+output/
+test-results/
+dist/
+build/
+tests/
+data/
+
+# Local config
+.env
+.env.*

@@ -1,0 +1,27 @@
+{
+  "name": "test_agent",
+  "version": "1.0.0",
+  "description": "Welcome to the TestAgent Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm run install:root && npm run playwright:install && npm run install:frontend",
+    "install:root": "npm install",
+    "install:frontend": "npm --prefix frontend install",
+    "playwright:install": "npx playwright install chromium",
+    "playwright:test": "npx playwright test",
+    "dev:backend": "uvicorn backend.server:app --host 0.0.0.0 --port 8001 --workers 1",
+    "dev:frontend": "npm --prefix frontend run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.54.2",
+    "dotenv": "^17.2.2",
+    "playwright": "^1.54.2"
+  }
+}
