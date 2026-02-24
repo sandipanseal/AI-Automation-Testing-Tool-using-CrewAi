@@ -129,7 +129,7 @@ sequenceDiagram
 
 ### Key pieces (where to look)
 
-- **FastAPI server** (`backend_api_patch/`): starts runs, streams logs via SSE, and serves `output/` artifacts.
+- **FastAPI server** (`backend/server`): starts runs, streams logs via SSE, and serves `output/` artifacts.
 - **CrewAI agents** (`src/test_agent/`): exploration, test-case writing, spec generation, and execution/fix.
 - **Playwright runtime** (Node): executes the generated `.spec.ts` and produces reports/artifacts.
 
